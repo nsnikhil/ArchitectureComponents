@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ArchitectureComponents</string>
+    <string name="noteHint">Note…</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- popUp Menu-->
+    <string name="popUpEdit">Edit</string>
+    <string name="popUpDelete">Delete</string>
+    <!-- -->
+</resources>
