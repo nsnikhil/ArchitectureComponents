@@ -5,7 +5,6 @@ import android.arch.persistence.room.Room;
 import android.content.Context;
 
 import com.nrs.nsnik.architecturecomponents.dagger.qualifier.ApplicationQualifier;
-import com.nrs.nsnik.architecturecomponents.dagger.scope.ApplicationScope;
 import com.nrs.nsnik.architecturecomponents.data.NoteDatabase;
 
 import org.jetbrains.annotations.NotNull;
@@ -26,7 +25,7 @@ public class DatabaseModule {
 
     @NotNull
     @Provides
-    NoteDatabase getNoteDatabase(@NotNull Context context, @NotNull String databaseName) {
+    NoteDatabase getNoteDatabase(@NotNull @ApplicationQualifier Context context, @NotNull String databaseName) {
         return Room.databaseBuilder(context, NoteDatabase.class, databaseName).build();
     }
 

@@ -2,15 +2,10 @@ package com.nrs.nsnik.architecturecomponents.utiil;
 
 
 import android.arch.lifecycle.LiveData;
-import android.content.Context;
 
-import com.nrs.nsnik.architecturecomponents.MyApplication;
-import com.nrs.nsnik.architecturecomponents.dagger.qualifier.ApplicationQualifier;
 import com.nrs.nsnik.architecturecomponents.dagger.scope.ApplicationScope;
 import com.nrs.nsnik.architecturecomponents.data.NoteDatabase;
 import com.nrs.nsnik.architecturecomponents.data.NoteEntity;
-
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -25,6 +20,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import timber.log.Timber;
 
+@ApplicationScope
 public class DbUtil {
 
     private final NoteDatabase mNoteDatabase;

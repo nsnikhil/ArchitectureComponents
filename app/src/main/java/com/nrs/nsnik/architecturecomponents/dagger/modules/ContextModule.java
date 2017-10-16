@@ -2,6 +2,8 @@ package com.nrs.nsnik.architecturecomponents.dagger.modules;
 
 import android.content.Context;
 
+import com.nrs.nsnik.architecturecomponents.dagger.qualifier.ApplicationQualifier;
+
 import org.jetbrains.annotations.NotNull;
 
 import dagger.Module;
@@ -18,6 +20,7 @@ public class ContextModule {
 
     @NotNull
     @Provides
+    @ApplicationQualifier
     Context provideContext() {
         return this.mContext;
     }

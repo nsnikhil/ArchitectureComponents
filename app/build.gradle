@@ -109,28 +109,26 @@ dependencies {
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 
     //LIFE CYCLE EXTENSIONS
-    implementation "android.arch.lifecycle:extensions:1.0.0-alpha9-1"
+    implementation "android.arch.lifecycle:extensions:1.0.0-beta2"
 
     //LIFE CYCLE JAVA 8
-    //implementation "android.arch.lifecycle:common-java8:1.0.0-beta2"
-    //implementation "android.arch.lifecycle:runtime:1.0.0"
-    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha9-1"
+    implementation "android.arch.lifecycle:common-java8:1.0.0-beta2"
 
     //LIVE DATA BACKGROUND TEST
-    testImplementation "android.arch.core:core-testing:1.0.0-alpha9-1"
+    testImplementation "android.arch.core:core-testing:1.0.0-beta2"
 
     //LIVE DATA WITH REACTIVE STREAMS
-    implementation "android.arch.lifecycle:reactivestreams:1.0.0-alpha9-1"
+    implementation "android.arch.lifecycle:reactivestreams:1.0.0-beta2"
 
     //ROOM
-    implementation "android.arch.persistence.room:runtime:1.0.0-alpha9-1"
-    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha9-1"
+    implementation "android.arch.persistence.room:runtime:1.0.0-beta2"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-beta2"
 
     //ROOM TEST MIGRATION
-    testImplementation "android.arch.persistence.room:testing:1.0.0-alpha9-1"
+    testImplementation "android.arch.persistence.room:testing:1.0.0-beta2"
 
     //ROOM RxJAVA
-    implementation "android.arch.persistence.room:rxjava2:1.0.0-alpha9-1"
+    implementation "android.arch.persistence.room:rxjava2:1.0.0-beta2"
 
     //PAGING
     implementation "android.arch.paging:runtime:1.0.0-alpha3"

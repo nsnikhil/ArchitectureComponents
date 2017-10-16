@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/stretchedHorizontally"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/itemBackground"
+    style="@style/stretchedHorizontally"
     android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
     android:foreground="?android:selectableItemBackground"
     android:padding="@dimen/eight">
 
@@ -16,22 +19,20 @@
         android:textColor="@color/colorPrimary" />
 
     <TextView
-        style="@style/wrapContent"
-        android:gravity="center"
-        android:layout_toEndOf="@id/itemHeader"
         android:id="@+id/itemContent"
+        style="@style/wrapContent"
         android:layout_marginStart="@dimen/eight"
         android:text="@string/app_name"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/itemHeader" />
 
     <TextView
-        style="@style/wrapContent"
-        android:gravity="center"
-        android:layout_toEndOf="@id/itemHeader"
-        android:layout_below="@id/itemContent"
         android:id="@+id/itemDate"
+        style="@style/wrapContent"
         android:layout_marginStart="@dimen/eight"
         android:text="@string/app_name"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/itemHeader"
+        app:layout_constraintTop_toBottomOf="@id/itemContent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
